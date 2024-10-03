@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme for the entire editor */
+.markdown-editor {
+  background-color: #f8f9fa; /* Light background color for the main editor */
+  color: #333; /* Dark text color for readability */
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Light theme for toolbar */
+.toolbar {
+  background-color: #ffffff; /* White background for toolbar */
+  border-bottom: 1px solid #ddd; /* Light gray border */
+}
+
+/* Light theme for buttons in toolbar */
+.toolbar button {
+  background-color: #007bff; /* Primary button color (light blue) */
+  color: #fff; /* White text on buttons */
+  border-radius: 4px; /* Rounded button corners */
+  padding: 8px 12px; /* Button padding */
+  border: none; /* Remove default button borders */
+  transition: background-color 0.3s ease;
+}
+
+.toolbar button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Light theme for MDEditor input area */
+.custom-md-editor .w-md-editor {
+  background-color: #ffffff; /* White background for the markdown editor */
+  border: 1px solid #ddd; /* Light gray border */
+  color: #333; /* Dark text color for the input area */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for markdown */
+}
+
+.custom-md-editor .w-md-editor-toolbar {
+  background-color: #f1f1f1; /* Light gray background for the toolbar */
+}
+
+.custom-md-editor .w-md-editor-content {
+  background-color: #ffffff; /* White background for the content area */
+  color: #333; /* Dark text color */
+}
+
+/* Light theme for the preview section */
+.custom-md-editor .w-md-editor-preview {
+  background-color: #ffffff; /* White background for the preview section */
+  color: #333; /* Dark text for preview */
+  border: 1px solid #ddd; /* Border around preview to match editor */
+  padding: 0; /* Padding for better readability */
+  
+}
+
+/* Customize markdown editor toolbar buttons */
+.custom-md-editor .w-md-editor-toolbar li button {
+  background-color: #e9ecef; /* Light button background */
+  color: #333; /* Dark text color for toolbar buttons */
+  border: 1px solid #ddd; /* Border around buttons */
+  padding: 5px 10px; /* Padding inside buttons */
+  border-radius: 4px; /* Rounded button corners */
+}
+
+.custom-md-editor .w-md-editor-toolbar li button:hover {
+  background-color: #ced4da; /* Slightly darker on hover */
+}
+
+/* Customize the scrollbar for the editor */
+.custom-md-editor .w-md-editor-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-md-editor .w-md-editor-content::-webkit-scrollbar-thumb {
+  background-color: #cccccc; /* Light gray scrollbar */
+  border-radius: 5px;
+}
+
+.custom-md-editor .w-md-editor-content::-webkit-scrollbar-thumb:hover {
+  background-color: #999999; /* Darker gray on hover */
+}
+
+/* Customize the scrollbar for the preview section */
+.custom-md-editor .w-md-editor-preview::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-md-editor .w-md-editor-preview::-webkit-scrollbar-thumb {
+  background-color: #cccccc; /* Light gray scrollbar for preview */
+  border-radius: 5px;
+}
+
+.custom-md-editor .w-md-editor-preview::-webkit-scrollbar-thumb:hover {
+  background-color: #999999; /* Darker gray on hover for preview */
+}
+
+/* General Light Theme Adjustments */
+.bg-light-theme {
+  background-color: #f8f9fa; /* Light background color for the whole page */
+}
+
+.bg-light-toolbar {
+  background-color: #ffffff; /* Light background for toolbar */
+}
+/* Targeting the wmde-markdown and wmde-markdown-color classes */
+.wmde-markdown.wmde-markdown-color {
+  background-color: #ffffff; /* Set background to white */
+  color: #333; /* Ensure dark text for readability */
+  padding: 16px; /* Add some padding for spacing */
+  border: 0; /* Optional: Add a light gray border */
+  height: 100%; /* Ensure the preview takes full height */
+}
