@@ -1,10 +1,10 @@
 import React from "react";
-import MarkdownEditor from "./components/MarkdownEditor"; // Import the MarkdownEditor component
+import MarkdownEditor from "./components/MarkdownEditor"; 
 
 const App = () => {
   return (
     <div className="app">
-      <MarkdownEditor /> {/* Render the MarkdownEditor component */}
+      <MarkdownEditor /> 
     </div>
   );
 };
