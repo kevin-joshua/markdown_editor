@@ -1,5 +1,5 @@
 import React from "react";
-import MDEditor, { commands } from "@uiw/react-md-editor"; // Import MDEditor
+import MDEditor, { commands } from "@uiw/react-md-editor"; 
 
 const Editor = ({ value, setValue }) => {
   return (
@@ -14,7 +14,7 @@ const Editor = ({ value, setValue }) => {
             commands.link,
             commands.strikethrough,
             commands.title,
-            // Add more commands as needed
+      
           ]}
           className="custom-md-editor h-full"  style={{ height: '100%', minHeight: '400px' }}
         />
