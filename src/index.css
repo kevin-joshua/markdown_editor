@@ -35,7 +35,7 @@
 .custom-md-editor .w-md-editor {
   background-color: #ffffff; /* White background for the markdown editor */
   border: 1px solid #ddd; /* Light gray border */
-  color: #333; /* Dark text color for the input area */
+  color: #000000; /* Dark text color for the input area */
   font-family: 'Courier New', Courier, monospace; /* Monospace font for markdown */
 }
 
