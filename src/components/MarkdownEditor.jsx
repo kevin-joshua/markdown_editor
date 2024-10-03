@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Toolbar from "./Toolbar"; // Import the Toolbar component
-import Editor from "./Editor"; // Import the Editor component
+import Toolbar from "./Toolbar"; 
+import Editor from "./Editor";
 
 const MarkdownEditor = () => {
   const [value, setValue] = useState("# Your custom markdown here");
@@ -16,10 +16,8 @@ const MarkdownEditor = () => {
 
   return (
     <div className="markdown-editor flex flex-col min-h-screen bg-light-theme">
-      {/* Toolbar Section */}
-      <Toolbar downloadFile={downloadFile} value={value} />
       
-      {/* Editor Section */}
+      <Toolbar downloadFile={downloadFile} value={value} />
       <Editor value={value} setValue={setValue} />
     </div>
   );
